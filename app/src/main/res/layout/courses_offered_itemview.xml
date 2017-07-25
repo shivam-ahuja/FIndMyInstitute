@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courses_offered_itemview_linearlayout"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/courseicon"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_class_black_24px"
+            />
+    <TextView
+        android:id="@+id/course_name_tv"
+        android:layout_width="0dp"
+        android:text="70sp"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+
+        android:layout_height="50dp"
+        android:layout_weight="7"/>
+    <ImageView
+        android:id="@+id/dropdown_iv"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="2"
+        android:background="@drawable/rippleeffect"
+        android:src="@drawable/ic_arrow_drop_down_black_24px"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_detail_tv"
+        android:padding="10dp"
+
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+</LinearLayout>

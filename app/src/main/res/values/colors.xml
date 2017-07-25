@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AA8D</color>
+    <color name="colorPrimaryDark">#008975</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="background">#64ffda</color>
+    <color name="black">#000</color>
+    <color name="listviewitembackground">@color/white</color>
+    <color name="spinnerbackground">#fe938c</color>
+    <color name="institutedetailbottom">#586f7c</color>
+    <color name="secondarycolor">#39a0ed</color>
+    <color name="secondarydark">#034078</color>
+<color name="intro">#db5a42</color>
+    <color name="black_overlay">#66000000</color>
+</resources><!-- -->

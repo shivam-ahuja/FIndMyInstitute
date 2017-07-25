@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.falgee.findmyinstitute.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/spinnerbackground"
+            android:id="@+id/mySpinner"></Spinner>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_margin="10dp"
+        android:id="@+id/fragmentRecyclerview"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/emptyview"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="30sp"
+
+       android:text="no related data found"
+        android:background="@color/background"/>
+
+</FrameLayout>
+
