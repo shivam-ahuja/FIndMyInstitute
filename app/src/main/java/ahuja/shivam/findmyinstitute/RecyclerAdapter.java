@@ -65,7 +65,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         viewholderobj.name.setText(mDataList.get(position).getIName());
         viewholderobj.location.setText(mDataList.get(position).getICity());
-        viewholderobj.email.setText(String.valueOf(mDataList.get(position).getIEmailid()));
+        if(!String.valueOf(mDataList.get(position).getIEmailid()).trim().equals("null")) {
+            viewholderobj.email.setText(String.valueOf(mDataList.get(position).getIEmailid()));
+        }
         viewholderobj.fees.setText(String.valueOf(mDataList.get(position).getIFees()));
         Picasso.with(mContext).load(mDataList.get(position).getIImage()).error(R.mipmap.ic_launcher).into(viewholderobj.image);
 
